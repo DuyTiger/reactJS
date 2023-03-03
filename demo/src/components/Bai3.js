@@ -44,8 +44,10 @@ const TableuserList = () => {
     return (
         <div>
             <div>
-                <input name='name' placeholder="Name" value={formData.name} onChange={onChange} />                 <input name='email' placeholder="Email" value={formData.email} onChange={onChange} />
+                <input name='name' placeholder="Name" value={formData.name} onChange={onChange} />                
+                <input name='email' placeholder="Email" value={formData.email} onChange={onChange} />
                 <input name='phone' placeholder="Phone" value={formData.phone} onChange={onChange} />
+                
                 <button onClick={onClick}>{formData.id ? 'Edit' : 'Add'}</button>
             </div>
             {userList.map((item) => {
