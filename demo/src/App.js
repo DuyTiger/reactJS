@@ -1,5 +1,5 @@
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import Bai4 from './components/Bai4';
+import { Breadcrumb, Layout, Menu, theme } from "antd";
+import Bai4 from "./components/Exam01/Exam01";
 
 const { Header, Content, Footer } = Layout;
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={['2']}
+          defaultSelectedKeys={["2"]}
           items={new Array(15).fill(null).map((_, index) => {
             const key = index + 1;
             return {
@@ -25,12 +25,12 @@ const App = () => {
       </Header>
       <Content
         style={{
-          padding: '0 50px',
+          padding: "0 50px",
         }}
       >
         <Breadcrumb
           style={{
-            margin: '16px 0',
+            margin: "16px 0",
           }}
         >
           <Breadcrumb.Item>Home</Breadcrumb.Item>
@@ -48,7 +48,7 @@ const App = () => {
       </Content>
       <Footer
         style={{
-          textAlign: 'center',
+          textAlign: "center",
         }}
       >
         Ant Design ©2023 Created by Ant UED
@@ -57,3 +57,6 @@ const App = () => {
   );
 };
 export default App;
+
+
+
