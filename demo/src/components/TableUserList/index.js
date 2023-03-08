@@ -1,21 +1,7 @@
-import { Table } from "antd";
+import { Table } from 'antd'
 
-const TableUserList = (props) => {
-  const dataSource = [
-    {
-      key: '1',
-      name: 'Mike',
-      email: 32,
-      phone: '10 Downing Street',
-    },
-    {
-      key: '2',
-      name: 'John',
-      email: 42,
-      phone: '10 Downing Street',
-    },
-  ];
-  
+const TableUserList = ({dataSource, onEdit, onDelete}) => {
+
   const columns = [
     {
       title: 'Name',
@@ -23,18 +9,31 @@ const TableUserList = (props) => {
       key: 'name',
     },
     {
-      title: 'email',
+      title: 'Email',
       dataIndex: 'email',
       key: 'email',
     },
     {
-      title: 'phone',
+      title: 'Phone',
       dataIndex: 'phone',
       key: 'phone',
     },
+    {
+      title: 'Action',
+      key: 'action',
+      // render: (text, record) => (
+      //   <span>
+      //     <a onClick={() => onEdit(record)}>Edit</a>
+      //     <span> | </span>
+      //     <a onClick={() => onDelete(record)}>Delete</a>
+      //   </span>
+      // ),
+    },
   ];
   
-  <Table dataSource={dataSource} columns={columns} />;
+  return (
+    <Table dataSource={dataSource} columns={columns} />
+  );
 };
 
 export default TableUserList;

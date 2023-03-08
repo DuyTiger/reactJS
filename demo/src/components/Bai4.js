@@ -8,7 +8,6 @@ const DEFAULT_USER = { name: "", email: "", phone: "" };
 const Bai4 = () => {
   const [formData, setFormData] = useState(DEFAULT_USER);
   const [userList, setUserList] = useState([]);
-  // const [searchUserList, setSearchUserList] = useState([]);
   const [keyword, setKeyword] = useState("");
 
   // useEffect(() => { // update nhieu du lieu
@@ -23,7 +22,6 @@ const Bai4 = () => {
   //   }
   // }, [keyword, userList]);
   const searchUserList = useMemo(() => {
-    // update 1 du lieu
     if (keyword !== "") {
       const newUserList = userList.filter((item) => {
         return item.name.includes(keyword) || item.email.includes(keyword);
