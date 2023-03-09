@@ -26,7 +26,11 @@ const Bai4 = () => {
     // update 1 du lieu
     if (keyword !== "") {
       const newUserList = userList.filter((item) => {
-        return item.name.includes(keyword) || item.email.includes(keyword);
+        return (
+          item.name.includes(keyword) ||
+          item.email.includes(keyword) ||
+          item.phone.includes(keyword)
+        );
       });
 
       return newUserList;

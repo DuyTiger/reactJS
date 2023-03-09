@@ -1,5 +1,5 @@
 import { Breadcrumb, Layout, Menu, theme } from "antd";
-import Bai4 from "./components/Exam01/Exam01";
+import Bai4 from "./components/Bai4";
 
 const { Header, Content, Footer } = Layout;
 const App = () => {
@@ -57,6 +57,3 @@ const App = () => {
   );
 };
 export default App;
-
-
-
