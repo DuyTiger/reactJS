@@ -1,5 +1,7 @@
 import { Breadcrumb, Layout, Menu, theme } from "antd";
-import Bai4 from "./components/Bai4";
+import Bai4 from "./components/Exam02";
+import 'antd/dist/reset.css';
+import './App.css'
 
 const { Header, Content, Footer } = Layout;
 const App = () => {
